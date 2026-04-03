@@ -1,25 +1,30 @@
-/* Page background */
+/* Full screen background */
 body {
   font-family: "Segoe UI", sans-serif;
   background: linear-gradient(135deg, #667eea, #764ba2);
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Main container */
+/* Main container (BIGGER NOW) */
 .App {
-  max-width: 400px;
-  margin: 80px auto;
+  width: 90%;
+  max-width: 600px;   /* increased from 400px */
   background: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* Heading */
 h1 {
   text-align: center;
-  color: #333;
-  margin-bottom: 20px;
+  color: #222;
+  font-size: 28px;
+  margin-bottom: 25px;
 }
 
 /* Input section */
@@ -31,22 +36,21 @@ h1 {
 /* Input box */
 input {
   flex: 1;
-  padding: 10px;
+  padding: 14px;
+  font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 6px;
-  outline: none;
-  font-size: 14px;
+  border-radius: 8px;
 }
 
 /* Add button */
 button {
-  padding: 10px 15px;
+  padding: 14px 18px;
+  font-size: 15px;
   border: none;
   background: #667eea;
   color: white;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 button:hover {
@@ -57,30 +61,26 @@ button:hover {
 ul {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 /* Each todo item */
 li {
   background: #f9fafc;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 14px;
+  border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.3s;
-}
-
-li:hover {
-  background: #eef1f7;
+  font-size: 16px;
 }
 
 /* Delete button */
 li button {
   background: #ff4d4f;
-  padding: 5px 10px;
-  font-size: 12px;
+  padding: 6px 12px;
+  font-size: 13px;
 }
 
 li button:hover {
