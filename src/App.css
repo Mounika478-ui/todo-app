@@ -1,41 +1,56 @@
-/* Center container */
+/* Page background */
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
 }
 
+/* Main container */
 .App {
-  text-align: center;
-  margin-top: 50px;
+  max-width: 400px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* Heading */
 h1 {
+  text-align: center;
   color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  gap: 10px;
 }
 
 /* Input box */
 input {
+  flex: 1;
   padding: 10px;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
   outline: none;
+  font-size: 14px;
 }
 
 /* Add button */
 button {
   padding: 10px 15px;
-  margin-left: 10px;
   border: none;
-  background-color: #4CAF50;
+  background: #667eea;
   color: white;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-  background-color: #45a049;
+  background: #5a67d8;
 }
 
 /* Todo list */
@@ -45,23 +60,29 @@ ul {
   margin-top: 20px;
 }
 
-/* Each item */
+/* Each todo item */
 li {
-  background: white;
-  margin: 10px auto;
+  background: #f9fafc;
+  margin-bottom: 10px;
   padding: 10px;
-  width: 300px;
-  border-radius: 5px;
+  border-radius: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: #eef1f7;
 }
 
 /* Delete button */
 li button {
-  background-color: red;
+  background: #ff4d4f;
+  padding: 5px 10px;
+  font-size: 12px;
 }
 
 li button:hover {
-  background-color: darkred;
+  background: #d9363e;
 }
