@@ -15,9 +15,7 @@ function App() {
     const newTodos = todos.filter((_, i) => i !== index);
     setTodos(newTodos);
   };
-
-  return (
-    return (
+return (
   <div className="App">
     <h1>Todo App</h1>
 
@@ -41,7 +39,8 @@ function App() {
     </ul>
   </div>
 );
-  );
+  
+  
 }
 
 export default App;
