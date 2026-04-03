@@ -17,26 +17,30 @@ function App() {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Todo App</h1>
+    return (
+  <div className="App">
+    <h1>Todo App</h1>
 
+    <div className="input-section">
       <input
         type="text"
         value={task}
         onChange={(e) => setTask(e.target.value)}
-        placeholder="Enter task"
+        placeholder="Enter task..."
       />
       <button onClick={addTodo}>Add</button>
-
-      <ul>
-        {todos.map((todo, index) => (
-          <li key={index}>
-            {todo}
-            <button onClick={() => deleteTodo(index)}>Delete</button>
-          </li>
-        ))}
-      </ul>
     </div>
+
+    <ul>
+      {todos.map((todo, index) => (
+        <li key={index}>
+          {todo}
+          <button onClick={() => deleteTodo(index)}>Delete</button>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
   );
 }
 
