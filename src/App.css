@@ -55,6 +55,7 @@ ul {
   list-style: none;
   padding: 0;
   margin-top: 20px;
+  border-top: 1px solid #e5e7eb;
 }
 
 /* Todo item */
@@ -70,7 +71,7 @@ li {
 }
 
 li:hover {
-  background: #eef2ff;
+  background: #f1f5f9;
 }
 
 /* Alternate colors */
