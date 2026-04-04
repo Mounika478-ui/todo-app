@@ -53,9 +53,9 @@ button {
   cursor: pointer;
 }
 
-/* button:hover {
+button:hover {
   background: #1d4ed8;
-} */
+}
 
 /* List */
 ul {
@@ -72,7 +72,7 @@ li {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #e5e7eb; /* light line */
-  border:2px solid gray;
+
 }
 
 /* Hover */
