@@ -1,4 +1,3 @@
-/* Background */
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
@@ -9,65 +8,60 @@ body {
   height: 100vh;
 }
 
-/* Mobile container */
+/* Mobile-style container */
 .App {
-  width: 320px;              /* mobile width */
-  height: 600px;             /* mobile height */
+  width: 340px;
+  height: 600px;
   background: #ffffff;
   border-radius: 25px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
   padding: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
 }
 
-/* Heading */
+/* Title */
 h1 {
   text-align: center;
   font-size: 22px;
   margin-bottom: 15px;
-  color: #333;
 }
 
 /* Input section */
-.input-section {
+.input-box {
   display: flex;
   gap: 8px;
 }
 
-/* Input */
 input {
   flex: 1;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #ddd;
-  font-size: 14px;
 }
 
-/* Add button */
 button {
-  padding: 10px;
   border: none;
   border-radius: 10px;
+  padding: 10px;
   background: #4f46e5;
   color: white;
   cursor: pointer;
-  font-size: 14px;
 }
 
 button:hover {
   background: #4338ca;
 }
 
-/* Todo list */
+/* List */
 ul {
   list-style: none;
   padding: 0;
   margin-top: 15px;
-  overflow-y: auto;   /* scroll inside mobile */
+  overflow-y: auto;
 }
 
-/* Todo item */
+/* Each item */
 li {
   background: #f3f4f6;
   padding: 10px;
@@ -78,13 +72,36 @@ li {
   align-items: center;
 }
 
-/* Delete button */
-li button {
-  background: #ef4444;
-  font-size: 12px;
-  padding: 5px 8px;
+/* Text */
+.text {
+  font-size: 14px;
 }
 
-li button:hover {
+/* Buttons */
+.btns {
+  display: flex;
+  gap: 5px;
+}
+
+.btns button {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+/* Edit */
+.edit {
+  background: #10b981;
+}
+
+.edit:hover {
+  background: #059669;
+}
+
+/* Delete */
+.delete {
+  background: #ef4444;
+}
+
+.delete:hover {
   background: #dc2626;
 }
