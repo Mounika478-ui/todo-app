@@ -58,15 +58,15 @@ ul {
 }
 
 /* Todo item */
+
 li {
   background: #f9fafb;
-  margin-bottom: 12px;
+  margin-bottom: 0;              /* remove gap */
   padding: 14px;
-  border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  border-bottom: 1px solid #e5e7eb; /* 👈 light line */
 }
 
 li:hover {
