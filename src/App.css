@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background: #f1f5f9; /* light grey background */
+  background: #f1f5f9;
 }
 
 /* Main container */
@@ -22,21 +22,28 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Input */
+/* Input section */
 .input-box {
   display: flex;
   gap: 10px;
 }
 
+/* Input field */
 input {
   flex: 1;
   padding: 12px;
   border-radius: 6px;
-  border: 1px solid #d1d5db;
+  border: 2px solid #cbd5e1; /* thicker border */
   font-size: 14px;
 }
 
-/* Add button (BLUE instead of purple) */
+/* Input focus */
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Add button */
 button {
   padding: 12px 16px;
   border: none;
@@ -55,36 +62,21 @@ ul {
   list-style: none;
   padding: 0;
   margin-top: 20px;
-  border-top: 1px solid #e5e7eb;
 }
 
-/* Todo item */
-
+/* Todo item with light lines */
 li {
   background: #f9fafb;
-  margin-bottom: 0;              /* remove gap */
   padding: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e5e7eb; /* 👈 light line */
+  border-bottom: 1px solid #e5e7eb; /* light line */
 }
 
+/* Hover */
 li:hover {
   background: #f1f5f9;
-}
-
-/* Alternate colors */
-li:nth-child(2) {
-  border-left-color: #10b981;
-}
-
-li:nth-child(3) {
-  border-left-color: #f59e0b;
-}
-
-li:nth-child(4) {
-  border-left-color: #ef4444;
 }
 
 /* Text */
@@ -99,7 +91,7 @@ li:nth-child(4) {
   gap: 8px;
 }
 
-/* Edit */
+/* Edit button */
 .edit {
   background: #10b981;
 }
@@ -108,7 +100,7 @@ li:nth-child(4) {
   background: #059669;
 }
 
-/* Delete */
+/* Delete button */
 .delete {
   background: #ef4444;
 }
