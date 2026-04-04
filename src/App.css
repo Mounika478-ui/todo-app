@@ -1,52 +1,50 @@
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background: #e5e7eb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  min-height: 100vh;
 }
 
-/* Mobile-style container */
+/* Main container */
 .App {
-  width: 340px;
-  height: 600px;
+  width: 500px;
+  margin: 80px auto;
   background: #ffffff;
-  border-radius: 25px;
-  padding: 20px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* Title */
 h1 {
   text-align: center;
-  font-size: 22px;
-  margin-bottom: 15px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 /* Input section */
 .input-box {
   display: flex;
-  gap: 8px;
+  gap: 10px;
 }
 
 input {
   flex: 1;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 12px;
+  border-radius: 6px;
   border: 1px solid #ddd;
+  font-size: 14px;
 }
 
+/* Add button */
 button {
+  padding: 12px 16px;
   border: none;
-  border-radius: 10px;
-  padding: 10px;
   background: #4f46e5;
   color: white;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 button:hover {
@@ -57,35 +55,40 @@ button:hover {
 ul {
   list-style: none;
   padding: 0;
-  margin-top: 15px;
-  overflow-y: auto;
+  margin-top: 20px;
 }
 
 /* Each item */
 li {
-  background: #f3f4f6;
-  padding: 10px;
-  margin-bottom: 8px;
-  border-radius: 10px;
+  background: #f9fafb;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.2s;
+}
+
+li:hover {
+  background: #eef2ff;
 }
 
 /* Text */
 .text {
-  font-size: 14px;
+  font-size: 15px;
+  color: #333;
 }
 
 /* Buttons */
 .btns {
   display: flex;
-  gap: 5px;
+  gap: 8px;
 }
 
 .btns button {
-  font-size: 12px;
-  padding: 6px 10px;
+  font-size: 13px;
+  padding: 6px 12px;
 }
 
 /* Edit */
